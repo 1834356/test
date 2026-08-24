@@ -27,10 +27,17 @@
     <a class="favorite-link" href="https://1834356.github.io/favorite/">私の好きな曲と譜面</a>
 
     <h2>ボタン</h2>
-    <button onclick="alert('こんにちは！')">
-        押してみてください
+    <button onclick="showImage()">
+    画像を表示
     </button>
 
+    <img id="d138.jpg" src="image.jpg" style="display: none;">
+
+    <script>
+    function showImage() {
+        document.getElementById("d138.jpg").style.display = "block";
+    }
+    </script>
 </body>
 
 </html>
