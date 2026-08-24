@@ -26,23 +26,22 @@
     <h2>リンク</h2>
     <a class="favorite-link" href="https://1834356.github.io/favorite/">私の好きな曲と譜面</a>
 
-   <h2>ボタン</h2>
+   <h2>画像切り替え</h2>
 
-<button onclick="toggleImage()">
-    画像を表示 / 非表示
+<button onclick="changeimage()">
+    次の画像
 </button>
 
-<img id="myImage" src="d138.jpg" style="display: none;">
+<img id="myImage" src="a1.jpg" width=500">
 
 <script>
-function toggleImage() {
-    const image = document.getElementById("myImage");
+let imageNumber = 1;
 
-    if (image.style.display === "none") {
-        image.style.display = "block";
-    } else {
-        image.style.display = "none";
-    }
+function changeImage() {
+    imageNumber++;
+
+    document.getElementById("myImage").src =
+        "a" + imageNumber + ".jpg";
 }
 </script>
 </body>
