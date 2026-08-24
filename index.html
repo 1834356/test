@@ -28,15 +28,21 @@
 
    <h2>ボタン</h2>
 
-<button onclick="showImage()">
-    ここを押してください
+<button onclick="toggleImage()">
+    画像を表示 / 非表示
 </button>
 
 <img id="myImage" src="d138.jpg" style="display: none;">
 
 <script>
-function showImage() {
-    document.getElementById("myImage").style.display = "block";
+function toggleImage() {
+    const image = document.getElementById("myImage");
+
+    if (image.style.display === "none") {
+        image.style.display = "block";
+    } else {
+        image.style.display = "none";
+    }
 }
 </script>
 </body>
