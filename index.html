@@ -40,6 +40,10 @@ let imageNumber = 1;
 function changeImage() {
     imageNumber++;
 
+    if (imageNumber > 2) {
+        imageNumber = 1;
+    }
+
     document.getElementById("myImage").src =
         "a" + imageNumber + ".jpg";
 }
